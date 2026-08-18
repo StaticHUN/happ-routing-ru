@@ -35,7 +35,7 @@
 
                 setTimeout(() => {
                     window.location.href = redirectUrl;
-                }, 1000);
+                }, 500);
             } catch (error) {
                 document.getElementById('status').innerHTML = `<span class="error">❌ Ошибка: ${error.message}</span>`;
                 document.getElementById('loader').style.display = 'none';
