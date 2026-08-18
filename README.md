@@ -20,7 +20,7 @@
   ```
 - **GeoIP (IP-адреса)**
   ```plaintext
-  https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat
+  https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat
   ```
 > 💡 Укажите эти ссылки в настройках геоданных.
 
