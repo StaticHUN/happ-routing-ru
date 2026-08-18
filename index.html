@@ -17,7 +17,7 @@
     <p>Нажмите кнопку "Открыть в Happ" для автодобавления правил или скопируйте строку ниже и вставьте её в приложение:</p>
     <textarea id="base64Output" readonly>Загрузка...</textarea>
     <br>
-    <button onclick="window.location.href='happ://routing/add/' + document.getElementById('base64Output').value">📲 Открыть в Happ</button>
+    <button onclick="window.location.href=document.getElementById('base64Output').value">📲 Открыть в Happ</button>
     <button onclick="copyToClipboard()">📋 Скопировать</button>
 	<p id="status"></p>
 
@@ -31,7 +31,8 @@
                 const data = await response.json();
                 const jsonString = JSON.stringify(data);
                 const base64 = btoa(unescape(encodeURIComponent(jsonString)));
-                document.getElementById('base64Output').value = 'happ://routing/add/' + base64;
+				const fullLink = 'happ://routing/add/' + base64;
+                document.getElementById('base64Output').value = fullLink;
                 document.getElementById('status').innerHTML = '<span class="success">✅ Правила загружены</span>';
             } catch (error) {
                 document.getElementById('base64Output').value = 'Ошибка загрузки';
