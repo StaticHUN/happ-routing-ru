@@ -150,6 +150,8 @@ regexp:^[0-9]+\\.mc\\.yandex\\.ru$
 regexp:^[0-9]{2}\\.img\\.avito\\.st$
 regexp:^sun[0-9]+(-[0-9]+)?\\.userapi\\.com$
 regexp:^sso-app[0-9]+\\.vtb\\.ru$
+1.1.1.1
+8.8.8.8
 10.0.0.0/8
 172.16.0.0/12
 192.168.0.0/16
